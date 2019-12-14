@@ -13,8 +13,7 @@ public class Main {
         Book book2 = new Book("Атлант расправил плечи", "Айн Рэнд", "  Альпина Паблишер", 2019, 1408, 28.31, "Твердый переплет");
         Book book3 = new Book("1984", "Джордж Оруэл", "АСТ", 2015, 320, 8.12, "Твердый переплет");
 
-        List<Book> books = new ArrayList<Book>() {
-        };
+        List<Book> books = new ArrayList<Book>();
         books.add(book1);
         books.add(book2);
         books.add(book3);

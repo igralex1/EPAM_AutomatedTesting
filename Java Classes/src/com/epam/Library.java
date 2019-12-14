@@ -15,9 +15,8 @@ public class Library {
     }
 
     public List<Book> listOfBooksByAuthor() {
-        List<Book> booksByAuthor = new ArrayList<>() {
-        };
-        Comparator<Book> comparator = new Comparator<Book>() {
+        List<Book> booksByAuthor = new ArrayList<>();
+        Comparator<Book> comparator = new Comparator<Book>() { //анонимный класс
             @Override
             public int compare(Book book, Book t1) {
                 return book.getAuthor().compareTo(t1.getAuthor());
