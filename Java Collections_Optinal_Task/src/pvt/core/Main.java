@@ -15,7 +15,7 @@ public class Main {
         String str = "";
         int i;
         while ((i = fr.read()) != -1) {
-            str += Character.toString((char) i);
+            str = str + Character.toString((char) i);
         }
         fr.close();
 

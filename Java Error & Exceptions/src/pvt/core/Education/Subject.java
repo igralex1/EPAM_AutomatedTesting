@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Subject extends AbstractSubject {
+    private int minGrade = 0;
+    private int maxGrade = 10;
+
     private String nameSubject;
     protected ArrayList<Double> grades = new ArrayList<>();
 
@@ -16,7 +19,7 @@ public class Subject extends AbstractSubject {
 
     @Override
     public void append(double newGrade) throws MarkException {
-        if (newGrade > 10 || newGrade < 0) {
+        if (newGrade > maxGrade || newGrade < minGrade) {
             throw new MarkException(newGrade);
         }
         this.grades.add(newGrade);

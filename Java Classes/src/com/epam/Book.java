@@ -1,16 +1,19 @@
-//5. Book: id, Название, Автор (ы), Издательство, Год издания, Количество страниц, Цена, Тип переплета.
-//
-//        Создать массив объектов. Вывести:
-//
-//        a) список книг заданного автора;
-//
-//        b)   список книг, выпущенных заданным издательством;
-//
-//        c)   список книг, выпущенных после заданного года.
+/**
+ * 5. Book: id, Название, Автор (ы), Издательство, Год издания, Количество страниц, Цена, Тип переплета.
+ *
+ *         Создать массив объектов. Вывести:
+ *
+ *         a) список книг заданного автора;
+ *
+ *         b)   список книг, выпущенных заданным издательством;
+ *
+ *         c)   список книг, выпущенных после заданного года.
+ */
 
 package com.epam;
 
 import java.util.Random;
+
 
 public class Book {
     Random randomId = new Random(100);
@@ -39,17 +42,15 @@ public class Book {
     }
 
     @Override
-    public String toString() {
-        return String.format(
-                "\nНазвание:\t" + this.title +
-                        "\nАвтор:\t" + this.author +
-                        "\nИздательство:\t" + this.publisher +
-                        "\nГод издательства:\t" + this.yearOfPublicashion +
-                        "\nКоличество страниц:\t" + this.numberOfPages +
-                        "\nЦена:\t" + this.price +
-                        "\nТип переплета:\t" + this.typeOfBinding + "\n" +
-                        "-----------------------------------------------------\n");
-
+    public void toString() {
+        System.out.println(
+                "Название: " + this.title +
+                "Автор:" + this.author +
+                "Издательство:" + this.publisher +
+                "Год издательства:" + this.yearOfPublicashion +
+                "Количество страниц:" + this.numberOfPages +
+                "Цена:" + this.price +
+                "Тип переплета:" + this.typeOfBinding);
     }
 
     // Getter and Setter
