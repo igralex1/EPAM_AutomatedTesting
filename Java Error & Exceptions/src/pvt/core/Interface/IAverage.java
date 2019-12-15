@@ -3,7 +3,7 @@ package pvt.core.Interface;
 import java.util.ArrayList;
 
 public interface IAverage {
-    public default double AverageMark(ArrayList<Double> marks) {
+    public default double averageMark(ArrayList<Double> marks) {
         double sum = 0;
         for (double value : marks) {
             sum += value;

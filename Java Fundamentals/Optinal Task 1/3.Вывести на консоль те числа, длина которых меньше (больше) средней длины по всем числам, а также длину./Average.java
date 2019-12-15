@@ -3,10 +3,10 @@
 public class Average {
 
     public static void main(String[] args) {
-        NumbFromAverage(args);
+        numbFromAverage(args);
     }
 
-    private static void NumbFromAverage(String[] args) {
+    private static void numbFromAverage(String[] args) {
         int average = 0;
         for (String element : args) {
             average += element.length();

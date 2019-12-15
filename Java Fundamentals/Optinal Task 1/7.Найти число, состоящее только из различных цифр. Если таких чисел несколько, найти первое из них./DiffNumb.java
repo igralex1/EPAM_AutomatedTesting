@@ -4,10 +4,10 @@ public class DiffNumb {
 
 
     public static void main(String[] args) {
-        DifferentNumber(args);
+        differentNumber(args);
     }
 
-    private static void DifferentNumber(String args[]) {
+    private static void differentNumber(String args[]) {
         // split an array into digit
         for (String digit : args) {
             // divide digits into numeral

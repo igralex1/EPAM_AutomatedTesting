@@ -9,5 +9,5 @@ public abstract class AbstractFaculty {
     protected List<Student> students;
     protected String group;
 
-    public abstract void AverageMarkSubject(String subjectName);
+    public abstract void averageMarkSubject(String subjectName);
 }

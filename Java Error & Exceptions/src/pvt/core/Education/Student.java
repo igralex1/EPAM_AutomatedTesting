@@ -25,11 +25,11 @@ public class Student extends AbstractStudent implements IAverage {
     // Work around
     // Fix it but it work
     @Override
-    public void AverageMarkSubject() {
+    public void averageMarkSubject() {
         ArrayList<Double> marksArray = new ArrayList<>();
         for (Subject sub : subjects) {
             marksArray.addAll(sub.getGrades());
         }
-        System.out.println("Cредний балл по предметам у студента " + nameStudent + " " + AverageMark(marksArray));
+        System.out.println("Cредний балл по предметам у студента " + nameStudent + " " + averageMark(marksArray));
     }
 }

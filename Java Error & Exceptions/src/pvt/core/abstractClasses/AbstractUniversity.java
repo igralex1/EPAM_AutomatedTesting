@@ -8,5 +8,5 @@ public abstract class AbstractUniversity {
     protected String nameUniversity;
     protected List<Faculty> faculties;
 
-    public abstract void AverageMarkSubject();
+    public abstract void averageMarkSubject();
 }

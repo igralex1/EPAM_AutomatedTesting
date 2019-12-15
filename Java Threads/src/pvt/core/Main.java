@@ -19,10 +19,10 @@ public class Main {
         final ArrayBlockingQueue<Automobile>
                 queue = new ArrayBlockingQueue<Automobile>(capacity);
 
-        DepartureAutomobile ta = new DepartureAutomobile(queue);
-        ArrivalAutomobile pt = new ArrivalAutomobile(queue);
+        DepartureAutomobile departure = new DepartureAutomobile(queue);
+        ArrivalAutomobile arrive = new ArrivalAutomobile(queue);
 
-        ta.start();
-        pt.start();
+        departure.start();
+        arrive.start();
     }
 }

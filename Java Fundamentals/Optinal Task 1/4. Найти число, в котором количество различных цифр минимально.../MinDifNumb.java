@@ -8,12 +8,12 @@ public class MinDifNumb {
     public static void main(String[] args) {
 
         //String[] s = new String[] {"31","252","81","4454","1","33"};
-        MinimalDifferentValue(args);
+        minimalDifferentValue(args);
     }
 
 
     //    Найти число, в котором количество различных цифр минимально. Если таких чисел несколько, найти первое из них.
-    private static void MinimalDifferentValue(String[] args) {
+    private static void minimalDifferentValue(String[] args) {
         int[] markedNumber = new int[args.length];
         for (String el : args) {
             char[] sliceNumb = new char[el.length()];

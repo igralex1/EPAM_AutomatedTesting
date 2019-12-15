@@ -20,7 +20,7 @@ public class University extends AbstractUniversity implements IAverage {
     // Work around
     // Fix it later but it work
     @Override
-    public void AverageMarkSubject() {
+    public void averageMarkSubject() {
         ArrayList<Double> averageMarkSub = new ArrayList<>();
         for (Faculty fac : faculties) {
             for (Student studentForeach : fac.getStudents()) {
@@ -30,7 +30,7 @@ public class University extends AbstractUniversity implements IAverage {
                 }
             }
         }
-        System.out.println("Cредний балл оценок по " + " " + AverageMark(averageMarkSub));
+        System.out.println("Cредний балл оценок по " + " " + averageMark(averageMarkSub));
     }
 }
 

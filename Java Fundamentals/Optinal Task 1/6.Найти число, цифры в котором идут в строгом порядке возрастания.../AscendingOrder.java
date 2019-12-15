@@ -4,10 +4,10 @@ public class AscendingOrder {
 
 
     public static void main(String[] args) {
-        InAscendingOrder(args);
+        inAscendingOrder(args);
     }
 
-    private static void InAscendingOrder(String args[]) {
+    private static void inAscendingOrder(String args[]) {
         // split an array into digit
         for (String digit : args) {
             // divide digits into numeral

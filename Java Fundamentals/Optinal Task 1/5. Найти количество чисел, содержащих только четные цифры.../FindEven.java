@@ -6,10 +6,10 @@ public class FindEven {
 
 
     public static void main(String[] args) {
-        FindEvenNumber(args);
+        findEvenNumber(args);
     }
 
-    private static void FindEvenNumber(String args[]) {
+    private static void findEvenNumber(String args[]) {
         // There are three stacks show the answer on this task
         Stack<String> evenLessOdd = new Stack<String>();
         Stack<String> oddLessEven = new Stack<String>();

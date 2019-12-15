@@ -3,10 +3,10 @@
 public class ShortAndLongNumber {
 
     public static void main(String[] args) {
-        FindShortAndLongNumber(args);
+        findShortAndLongNumber(args);
     }
 
-    private static void FindShortAndLongNumber(String[] args) {
+    private static void findShortAndLongNumber(String[] args) {
         String shortNumber = args[0];
         String longNumber = args[0];
         for (String element : args) {

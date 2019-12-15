@@ -35,11 +35,11 @@ public abstract class HomeElectricalAppliances {
 
     protected abstract String getFolderName();
 
-    public void PlugInOutAppliance() {
+    public void plugInOutAppliance() {
         applianceSwitch = applianceSwitch != true ? true : false;
     }
 
-    public String StatusAppliance() {
+    public String statusAppliance() {
 
         String status = applianceSwitch != true ?
                 "Прибор " + brandAppliance + " включен в розетку" :
